@@ -304,9 +304,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7525598335487687272, guid: a35d02f8f3ec1fe4da055f8e03ecc0c6, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6583101794962424660, guid: a35d02f8f3ec1fe4da055f8e03ecc0c6, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5504873114699921157, guid: a35d02f8f3ec1fe4da055f8e03ecc0c6, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2733478902767524404, guid: a35d02f8f3ec1fe4da055f8e03ecc0c6, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2514903660962292141, guid: a35d02f8f3ec1fe4da055f8e03ecc0c6, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2128535048773344386, guid: a35d02f8f3ec1fe4da055f8e03ecc0c6, type: 3}
+      propertyPath: m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2128535048773344386, guid: a35d02f8f3ec1fe4da055f8e03ecc0c6, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -477403155001037634, guid: a35d02f8f3ec1fe4da055f8e03ecc0c6, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a35d02f8f3ec1fe4da055f8e03ecc0c6, type: 3}
       propertyPath: m_Name
       value: DeadRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460195121323489459, guid: a35d02f8f3ec1fe4da055f8e03ecc0c6, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696321282608856172, guid: a35d02f8f3ec1fe4da055f8e03ecc0c6, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6164330873501044871, guid: a35d02f8f3ec1fe4da055f8e03ecc0c6, type: 3}
       propertyPath: m_LocalScale.x
@@ -319,6 +359,14 @@ PrefabInstance:
     - target: {fileID: 6164330873501044871, guid: a35d02f8f3ec1fe4da055f8e03ecc0c6, type: 3}
       propertyPath: m_LocalScale.z
       value: -53391.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957939569823685514, guid: a35d02f8f3ec1fe4da055f8e03ecc0c6, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297909652688645005, guid: a35d02f8f3ec1fe4da055f8e03ecc0c6, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
