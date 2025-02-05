@@ -1,4 +1,6 @@
 using System;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -7,12 +9,17 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform playerTransform;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite idleSprite;
-    
+    private GameObject ladder;
     [Header("Movement")]
     [SerializeField] int movementSpeed = 5;
     [SerializeField] float xInput;
     [SerializeField] float zInput;
-    
+
+    private void Awake()
+    {
+       ladder = GetComponent<GameObject>();
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
