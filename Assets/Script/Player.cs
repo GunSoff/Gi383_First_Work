@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
     [SerializeField] private bool micro;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Sprite idleSprite;
     
     [Header("Movement")]
     [SerializeField] int movementSpeed = 5;
@@ -36,6 +37,11 @@ public class Player : MonoBehaviour
         else if (xInput > 0)
         {
             spriteRenderer.flipX = false;   
+        }
+
+        if (xInput == 0 && zInput == 0)
+        {
+            spriteRenderer.sprite = idleSprite;
         }
     }
 
