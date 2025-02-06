@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform playerTransform;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite idleSprite;
+    [SerializeField] public bool canOut = false;
     private GameObject ladder;
     [Header("Movement")]
     [SerializeField] int movementSpeed = 5;
