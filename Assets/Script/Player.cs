@@ -1,15 +1,18 @@
 using System;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor.UI;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+
+public class Player : Characters
 {
     [SerializeField] private bool micro;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite idleSprite;
     [SerializeField] public bool canOut = false;
+    
     private GameObject ladder;
     [Header("Movement")]
     [SerializeField] int movementSpeed = 5;
@@ -64,6 +67,8 @@ public class Player : MonoBehaviour
             playerTransform.transform.localScale = new Vector3(0.3f,0.3f,0.3f);
         }
     }
+
+    
 }
 
 
