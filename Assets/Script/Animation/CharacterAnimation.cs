@@ -25,7 +25,7 @@ public class CharacterAnimation : MonoBehaviour
                 c.Anim.SetBool("IsWalk", true);
                 break;
                 case CharState.Die:
-                c.Anim.SetBool("IsDIe",true);
+                c.Anim.SetBool("IsDie",true);
                 break;
         }
     }

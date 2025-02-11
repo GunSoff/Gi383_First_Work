@@ -12,6 +12,7 @@ public class Player : Characters
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite idleSprite;
     [SerializeField] public bool canOut = false;
+    [SerializeField] public bool checkDead = false;
     
     private GameObject ladder;
     [Header("Movement")]
@@ -32,6 +33,25 @@ public class Player : Characters
         }
         MoveBYKB();
         MicroMacro();
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            checkDead = !checkDead;
+        }
+        
+        if(checkDead)
+        {
+            SetState(CharState.Die);
+            this.Anim.SetTrigger("IsDie");
+        }
+        else if (xInput == 0 && zInput == 0 && checkDead == false)
+        {
+            SetState(CharState.Idle);
+        }
+        else 
+        {
+             SetState(CharState.Walk);  
+        }
+        
     }
 
     void MoveBYKB()
@@ -48,11 +68,6 @@ public class Player : Characters
         else if (xInput > 0)
         {
             spriteRenderer.flipX = false;   
-        }
-
-        if (xInput == 0 && zInput == 0)
-        {
-            spriteRenderer.sprite = idleSprite;
         }
     }
 
