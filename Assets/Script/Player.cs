@@ -10,7 +10,6 @@ public class Player : Characters
     [SerializeField] private bool micro;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private Sprite idleSprite;
     [SerializeField] public bool canOut = false;
     [SerializeField] public bool checkDead = false;
     
@@ -41,7 +40,6 @@ public class Player : Characters
         if(checkDead)
         {
             SetState(CharState.Die);
-            this.Anim.SetTrigger("IsDie");
         }
         else if (xInput == 0 && zInput == 0 && checkDead == false)
         {
