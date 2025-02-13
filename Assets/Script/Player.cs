@@ -17,7 +17,9 @@ public class Player : Characters
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] public bool canOut = false;
     [SerializeField] public bool checkDead = false;
+    [SerializeField] public bool stealth = false;
     [SerializeField] public PlayerLocation playerLocation;
+
     
     private GameObject ladder;
     [Header("Movement")]
