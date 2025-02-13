@@ -4,7 +4,6 @@ public enum CharState
 {
     Idle,
     Walk,
-    Stealth,
     Die
 }
 public abstract class Characters : MonoBehaviour

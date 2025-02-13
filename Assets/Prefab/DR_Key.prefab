@@ -120,9 +120,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TestL: 0
-  keyText: {fileID: 0}
+  keyText: {fileID: 3133979398830538495, guid: 916af3bbaed5e7e4ebee56b8f619652f, type: 3}
   i: 0
-  player: {fileID: 0}
+  player: {fileID: 8805744079083450429, guid: 6b04b4f972541194f9311fa162bb965c, type: 3}
   keyfor: 0
 --- !u!108 &5377671945719350820
 Light:
