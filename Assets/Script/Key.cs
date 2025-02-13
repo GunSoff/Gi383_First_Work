@@ -4,6 +4,15 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
+public enum KeyFor
+{
+    FrontDoor,
+    BathDoor,
+    LadderDoor,
+    StorageDoor,
+    DollHouse,
+    None
+}
 
 public class Key : MonoBehaviour
 {
@@ -11,6 +20,7 @@ public class Key : MonoBehaviour
     [SerializeField] private GameObject keyText;
     [SerializeField] private int i;
     [SerializeField] private Player player;
+    [SerializeField] private KeyFor keyfor;
 
     private void Awake()
     {
@@ -21,10 +31,11 @@ public class Key : MonoBehaviour
     {
         if (TestL && Input.GetKeyDown(KeyCode.E))
         {
-            Destroy(this.gameObject);
-            player.canOut = true;
             TestL = false;
             keyText.SetActive(false);
+            player.keys.Add(keyfor);
+            
+            gameObject.SetActive(false);
         }
     }
     private void OnCollisionEnter(Collision other)
