@@ -5,7 +5,11 @@ using Unity.VisualScripting;
 using UnityEditor.UI;
 using UnityEngine;
 
-
+public enum PlayerLocation
+{
+    NormalHouse,
+    DollHouse
+}
 public class Player : Characters
 {
     [SerializeField] private bool micro;
@@ -14,6 +18,8 @@ public class Player : Characters
     [SerializeField] public bool canOut = false;
     [SerializeField] public bool checkDead = false;
     [SerializeField] public bool stealth = false;
+    [SerializeField] public PlayerLocation playerLocation;
+
     
     private GameObject ladder;
     [Header("Movement")]
@@ -85,8 +91,6 @@ public class Player : Characters
             playerTransform.transform.localScale = new Vector3(0.3f,0.3f,0.3f);
         }
     }
-
-    
 }
 
 
