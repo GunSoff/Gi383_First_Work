@@ -1,15 +1,18 @@
 using System;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor.UI;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+
+public class Player : Characters
 {
     [SerializeField] private bool micro;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private Sprite idleSprite;
     [SerializeField] public bool canOut = false;
+    [SerializeField] public bool checkDead = false;
+    
     private GameObject ladder;
     [Header("Movement")]
     [SerializeField] int movementSpeed = 5;
@@ -29,6 +32,24 @@ public class Player : MonoBehaviour
         }
         MoveBYKB();
         MicroMacro();
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            checkDead = !checkDead;
+        }
+        
+        if(checkDead)
+        {
+            SetState(CharState.Die);
+        }
+        else if (xInput == 0 && zInput == 0 && checkDead == false)
+        {
+            SetState(CharState.Idle);
+        }
+        else 
+        {
+             SetState(CharState.Walk);  
+        }
+        
     }
 
     void MoveBYKB()
@@ -46,11 +67,6 @@ public class Player : MonoBehaviour
         {
             spriteRenderer.flipX = false;   
         }
-
-        if (xInput == 0 && zInput == 0)
-        {
-            spriteRenderer.sprite = idleSprite;
-        }
     }
 
     void MicroMacro()
@@ -64,6 +80,8 @@ public class Player : MonoBehaviour
             playerTransform.transform.localScale = new Vector3(0.3f,0.3f,0.3f);
         }
     }
+
+    
 }
 
 
