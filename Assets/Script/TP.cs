@@ -6,7 +6,9 @@ using Vector3 = System.Numerics.Vector3;
 public enum Location
 {
     Up,
-    Down
+    Down,
+    Left,
+    Right
 }
 public class TP : MonoBehaviour
 {
@@ -26,6 +28,14 @@ public class TP : MonoBehaviour
             else if (location == Location.Up)
             {
                 playerPrefab.transform.position = new UnityEngine.Vector3(-27f, 11.2f, -0.6f);
+            }
+            else if (location == Location.Left)
+            {
+                playerPrefab.transform.position = new UnityEngine.Vector3(-44f, 11.5f, -2.4f);
+            }
+            else if (location == Location.Right)
+            {
+                playerPrefab.transform.position = new UnityEngine.Vector3(-30f, 11.5f, -2.4f);
             }
         }
     }
