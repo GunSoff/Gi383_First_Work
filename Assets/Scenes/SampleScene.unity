@@ -639,12 +639,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3ffb1d183eb9c6c449bea71671fcda38, type: 2}
     - target: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
       propertyPath: m_Name
-      value: DeadDoor (4)
+      value: Bathdoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1370926841}
   m_SourcePrefab: {fileID: 100100000, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
 --- !u!1 &73146325
 GameObject:
@@ -818,6 +821,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0525668, y: 0.9248355, z: 2.8698468}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &125274822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+  m_PrefabInstance: {fileID: 1596704770}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &129000398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3123,12 +3131,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3ffb1d183eb9c6c449bea71671fcda38, type: 2}
     - target: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
       propertyPath: m_Name
-      value: DeadDoor (5)
+      value: Storagedoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2055295638}
   m_SourcePrefab: {fileID: 100100000, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
 --- !u!1001 &289954673
 PrefabInstance:
@@ -3754,12 +3765,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3ffb1d183eb9c6c449bea71671fcda38, type: 2}
     - target: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
       propertyPath: m_Name
-      value: DeadDoor (7)
+      value: Basementdoor-Downstair
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1282878516}
   m_SourcePrefab: {fileID: 100100000, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
 --- !u!1001 &363186712
 PrefabInstance:
@@ -5536,6 +5550,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.020000001, y: 0.020000001, z: 0.02}
   m_Center: {x: 0, y: 0, z: 0.01}
+--- !u!1 &562418165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+  m_PrefabInstance: {fileID: 1147374394}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &566761765
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7343,6 +7362,32 @@ Transform:
   - {fileID: 3517261828636024885}
   m_Father: {fileID: 543450651885912162}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &751224560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+  m_PrefabInstance: {fileID: 1471258101}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &751224563
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751224560}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.054936577, y: 0.26533788, z: 0.41366062}
+  m_Center: {x: -0.00009787739, y: 0.13266903, z: -0.20683019}
 --- !u!1 &751801956
 GameObject:
   m_ObjectHideFlags: 0
@@ -8143,6 +8188,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011834032, y: 0.020000074, z: 0.004752797}
   m_Center: {x: 0.0006253799, y: -0.0000000038532515, z: 0.000031649928}
+--- !u!1 &858721437 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+  m_PrefabInstance: {fileID: 30434708}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &865136629
 GameObject:
   m_ObjectHideFlags: 0
@@ -8810,12 +8860,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3ffb1d183eb9c6c449bea71671fcda38, type: 2}
     - target: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
       propertyPath: m_Name
-      value: DeadDoor (3)
+      value: Bedroomdoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1445863253}
   m_SourcePrefab: {fileID: 100100000, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
 --- !u!1 &981697686 stripped
 GameObject:
@@ -8901,6 +8954,32 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 29, y: 20, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1005478515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+  m_PrefabInstance: {fileID: 2138828092}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1005478518
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005478515}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.054936577, y: 0.26533788, z: 0.41366062}
+  m_Center: {x: -0.00009740055, y: 0.13266903, z: -0.20683019}
 --- !u!1001 &1011139147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9023,6 +9102,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
   m_PrefabInstance: {fileID: 1596704770}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1041362424
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125274822}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.054936547, y: 0.26533774, z: 0.41366047}
+  m_Center: {x: -0.000097311095, y: 0.13266985, z: -0.20683035}
 --- !u!1 &1046064458
 GameObject:
   m_ObjectHideFlags: 0
@@ -10562,12 +10662,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3ffb1d183eb9c6c449bea71671fcda38, type: 2}
     - target: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
       propertyPath: m_Name
-      value: DeadDoor (1)
+      value: Kitchendoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2125622519}
   m_SourcePrefab: {fileID: 100100000, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
 --- !u!1001 &1156488363
 PrefabInstance:
@@ -11833,6 +11936,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 03a167c765da0db40bc228a085fb3957, type: 3}
   m_PrefabInstance: {fileID: 1268606720}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1282878513 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+  m_PrefabInstance: {fileID: 355185777}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1282878516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282878513}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.054936547, y: 0.26533774, z: 0.41366047}
+  m_Center: {x: -0.000097311095, y: 0.13266937, z: -0.20683038}
 --- !u!1 &1298791952
 GameObject:
   m_ObjectHideFlags: 0
@@ -17775,11 +17904,37 @@ PrefabInstance:
       addedObject: {fileID: 1926577193}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fbd03117e1dfec4280d2e6950e6ef10, type: 3}
+--- !u!1 &1357256439 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+  m_PrefabInstance: {fileID: 280488669}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1370926838 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
   m_PrefabInstance: {fileID: 30434708}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1370926841
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858721437}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.054936577, y: 0.26533788, z: 0.41366062}
+  m_Center: {x: -0.00009787739, y: 0.13266897, z: -0.20683007}
 --- !u!1 &1378681760
 GameObject:
   m_ObjectHideFlags: 0
@@ -18799,6 +18954,32 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 0.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1445863250 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+  m_PrefabInstance: {fileID: 979513304}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1445863253
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445863250}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.054936577, y: 0.26533788, z: 0.41366062}
+  m_Center: {x: -0.00009740055, y: 0.13266897, z: -0.20683007}
 --- !u!1001 &1471258101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18853,12 +19034,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3ffb1d183eb9c6c449bea71671fcda38, type: 2}
     - target: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
       propertyPath: m_Name
-      value: DeadDoor (6)
+      value: Frontdoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 751224563}
   m_SourcePrefab: {fileID: 100100000, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
 --- !u!1001 &1486621375
 PrefabInstance:
@@ -19432,12 +19616,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3ffb1d183eb9c6c449bea71671fcda38, type: 2}
     - target: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
       propertyPath: m_Name
-      value: DeadDoor (2)
+      value: Basementdoor-Upstair
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1041362424}
   m_SourcePrefab: {fileID: 100100000, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
 --- !u!1001 &1596788785
 PrefabInstance:
@@ -22835,18 +23022,47 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3ffb1d183eb9c6c449bea71671fcda38, type: 2}
     - target: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
       propertyPath: m_Name
-      value: DeadDoor (8)
+      value: Atticdoor-Outside
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1914055405}
   m_SourcePrefab: {fileID: 100100000, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
 --- !u!4 &1914055403 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
   m_PrefabInstance: {fileID: 1914055402}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1914055404 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+  m_PrefabInstance: {fileID: 1914055402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1914055405
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914055404}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.054936577, y: 0.26533788, z: 0.41366062}
+  m_Center: {x: -0.00009787739, y: 0.13266891, z: -0.20683031}
 --- !u!1001 &1916293207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23536,18 +23752,47 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3ffb1d183eb9c6c449bea71671fcda38, type: 2}
     - target: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
       propertyPath: m_Name
-      value: DeadDoor (9)
+      value: Atticdoor-Inside
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1962947756}
   m_SourcePrefab: {fileID: 100100000, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
 --- !u!4 &1962947754 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
   m_PrefabInstance: {fileID: 1962947753}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1962947755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+  m_PrefabInstance: {fileID: 1962947753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1962947756
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962947755}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.054936577, y: 0.26533788, z: 0.41366062}
+  m_Center: {x: -0.00009835423, y: 0.13266891, z: -0.20683031}
 --- !u!4 &1964279293 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1fbd03117e1dfec4280d2e6950e6ef10, type: 3}
@@ -24628,6 +24873,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
   m_PrefabInstance: {fileID: 280488669}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2055295638
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357256439}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.054936577, y: 0.26533788, z: 0.41366062}
+  m_Center: {x: -0.00009740055, y: 0.13266894, z: -0.20683031}
 --- !u!1 &2064793083 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 06edd2d85dd02e440a6bebaf9e2e3dea, type: 3}
@@ -25392,6 +25658,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
   m_PrefabInstance: {fileID: 1147374394}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2125622519
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562418165}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.054936577, y: 0.26533788, z: 0.41366062}
+  m_Center: {x: -0.00009740055, y: 0.13266903, z: -0.20683019}
 --- !u!1001 &2138828092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25446,12 +25733,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3ffb1d183eb9c6c449bea71671fcda38, type: 2}
     - target: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
       propertyPath: m_Name
-      value: DeadDoor
+      value: Toiletdoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1005478518}
   m_SourcePrefab: {fileID: 100100000, guid: da6abc32d32852c48bbc51b316f9deeb, type: 3}
 --- !u!65 &2141325026
 BoxCollider:
