@@ -44,6 +44,10 @@ public class Door : MonoBehaviour
         {
             return true;
         }
+        else if (player.keys.Count == 0)
+        {
+            return false;
+        }
         else
         {
             return false;
