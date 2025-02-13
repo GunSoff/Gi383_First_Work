@@ -6,11 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 6eae8b02960cd354898620c6c998239b
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/Maze.unity
+    guid: 36f5011f3211ada4dac6ab5303943025
+  - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 464f3e150743316448a55f81f9b75796
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: bf1570543e906fb4a9c73fcdf87e9931
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
