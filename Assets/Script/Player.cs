@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEditor.UI;
@@ -18,6 +19,9 @@ public class Player : Characters
     [SerializeField] int movementSpeed = 5;
     [SerializeField] float xInput;
     [SerializeField] float zInput;
+
+    [Header("ObtainedKeys")] 
+    public List<KeyFor> keys = new List<KeyFor>();
 
     private void Awake()
     {

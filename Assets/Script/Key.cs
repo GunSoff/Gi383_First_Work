@@ -10,7 +10,8 @@ public enum KeyFor
     BathDoor,
     LadderDoor,
     StorageDoor,
-    DollHouse
+    DollHouse,
+    None
 }
 
 public class Key : MonoBehaviour
@@ -30,10 +31,11 @@ public class Key : MonoBehaviour
     {
         if (TestL && Input.GetKeyDown(KeyCode.E))
         {
-            Destroy(this.gameObject);
-            player.canOut = true;
             TestL = false;
             keyText.SetActive(false);
+            player.keys.Add(keyfor);
+            
+            gameObject.SetActive(false);
         }
     }
     private void OnCollisionEnter(Collision other)
