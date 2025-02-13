@@ -23759,6 +23759,7 @@ GameObject:
   - component: {fileID: 1888318483}
   - component: {fileID: 1888318484}
   - component: {fileID: 1888318485}
+  - component: {fileID: 1888318486}
   m_Layer: 0
   m_Name: Dollhouse_Kitchen
   m_TagString: Untagged
@@ -23820,7 +23821,22 @@ MonoBehaviour:
   collider: {fileID: 1888318484}
   spawnPos: {fileID: 223020900}
   isTrigger: 0
-  isAllowed: 1
+  isAllowed: 0
+--- !u!114 &1888318486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888318482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 540e28beb317e354199fea32fbd7636e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyForDollhouse: 4
+  player: {fileID: 1147104930}
+  dollhouse: {fileID: 1888318485}
 --- !u!1001 &1893479674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27737,7 +27753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5772434006489801411, guid: caa7099bc7e6ac24ea969caa9ff7f0f9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.22000015
+      value: -1.727
       objectReference: {fileID: 0}
     - target: {fileID: 5772434006489801411, guid: caa7099bc7e6ac24ea969caa9ff7f0f9, type: 3}
       propertyPath: m_LocalRotation.w

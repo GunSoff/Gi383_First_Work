@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    [SerializeField] private Collider collider;
-    [SerializeField] private KeyFor keyForThisDoor;
-    [SerializeField] private Player player;
-    [SerializeField] private bool isDoorClose;
-    [SerializeField] private bool isAtDoor;
+    [SerializeField] protected Collider collider;
+    [SerializeField] protected KeyFor keyForThisDoor;
+    [SerializeField] protected Player player;
+    [SerializeField] protected bool isDoorClose;
+    [SerializeField] protected bool isAtDoor;
     
     void Update()
     {
@@ -29,7 +29,7 @@ public class Door : MonoBehaviour
             }
         }
     }
-
+    
     private void OnCollisionExit(Collision other)
     {
         if (other.gameObject.name == "Player")
@@ -42,12 +42,10 @@ public class Door : MonoBehaviour
     {
         if (player.keys.Contains(keyForThisDoor))
         {
-            Debug.Log("player have key");
             return true;
         }
         else
         {
-            Debug.Log("player don't have key");
             return false;
         }
     }
