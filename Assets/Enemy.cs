@@ -22,6 +22,10 @@ public class Enemy : Characters
             IncreaseTargetInt();
         }
         transform.position = Vector3.MoveTowards(transform.position, waypoints[targetWaypoint].position, Time.deltaTime * speed);
+        if (_player.win)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     private void IncreaseTargetInt()

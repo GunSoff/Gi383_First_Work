@@ -19,7 +19,10 @@ public class Player : Characters
     [SerializeField] public bool checkDead = false;
     [SerializeField] public bool stealth = false;
     [SerializeField] public PlayerLocation playerLocation;
-    
+    [SerializeField] public GameObject LosePanel;
+    [SerializeField] public GameObject WinImage;
+    [SerializeField] private float timeToEnd;
+    [SerializeField] public bool win;
     
     [Header("Movement")]
     [SerializeField] int movementSpeed = 5;
@@ -31,7 +34,7 @@ public class Player : Characters
 
     private void Awake()
     {
-      
+        timeToEnd = 10f;
     }
 
     private void Update()
@@ -50,6 +53,12 @@ public class Player : Characters
         if(checkDead)
         {
             SetState(CharState.Die);
+            LosePanel.SetActive(true);
+            timeToEnd -= Time.deltaTime;
+            if (timeToEnd <= 0)
+            {
+                Application.Quit();
+            }
         }
         else if (xInput == 0 && zInput == 0 && checkDead == false)
         {
@@ -59,7 +68,16 @@ public class Player : Characters
         {
              SetState(CharState.Walk);  
         }
-        
+
+        if (win)
+        {
+            WinImage.SetActive(true);
+            timeToEnd -= Time.deltaTime;
+            if (timeToEnd <= 0)
+            {
+                Application.Quit();
+            }
+        }
     }
 
     void MoveBYKB()
