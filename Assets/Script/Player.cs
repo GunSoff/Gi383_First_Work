@@ -20,7 +20,7 @@ public class Player : Characters
     [SerializeField] public bool stealth = false;
     [SerializeField] public PlayerLocation playerLocation;
     
-    private GameObject ladder;
+    
     [Header("Movement")]
     [SerializeField] int movementSpeed = 5;
     [SerializeField] float xInput;
@@ -31,7 +31,7 @@ public class Player : Characters
 
     private void Awake()
     {
-       ladder = GetComponent<GameObject>();
+      
     }
 
     private void Update()
