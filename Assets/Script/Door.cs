@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using UnityEngine;
 
 public class Door : MonoBehaviour
@@ -13,6 +14,10 @@ public class Door : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && IsRightKey(player) && isAtDoor)
         {
+            if (keyForThisDoor == KeyFor.FrontDoor)
+            {
+                player.canOut = true;
+            }
             isDoorClose = false;
             collider.enabled = false;
         }
@@ -23,7 +28,7 @@ public class Door : MonoBehaviour
         if (other.gameObject.name == "Player")
         {
             isAtDoor = true;
-            if (!isDoorClose)
+            if (isDoorClose == false)
             {
                 collider.enabled = false;
             }

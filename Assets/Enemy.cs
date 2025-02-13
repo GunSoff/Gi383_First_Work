@@ -5,7 +5,7 @@ public class Enemy : Characters
 {
     public Transform[] waypoints;
     public int targetWaypoint;
-    public float speed = 3;
+    public float speed = 1f;
     [SerializeField] private Player _player;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
