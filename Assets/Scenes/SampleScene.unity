@@ -5649,7 +5649,7 @@ MonoBehaviour:
   TestL: 0
   keyText: {fileID: 1843710749}
   i: 0
-  player: {fileID: 1147104923}
+  player: {fileID: 0}
 --- !u!65 &600270822
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10264,10 +10264,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1147104926}
   - component: {fileID: 1147104925}
-  - component: {fileID: 1147104924}
-  - component: {fileID: 1147104923}
   - component: {fileID: 1147104927}
   - component: {fileID: 1147104928}
+  - component: {fileID: 1147104930}
+  - component: {fileID: 1147104929}
+  - component: {fileID: 1147104931}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -10275,50 +10276,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1147104923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1147104922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32ca50715eb59334c9eb0a4553a300eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 1147104924}
-  charState: 0
-  micro: 0
-  playerTransform: {fileID: 1147104926}
-  spriteRenderer: {fileID: 1147104925}
-  canOut: 0
-  checkDead: 0
-  movementSpeed: 2
-  xInput: 0
-  zInput: 0
---- !u!95 &1147104924
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1147104922}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 69b7a747b541f38488578ccdbcb4f4d5, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &1147104925
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10438,6 +10395,62 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 5.2000003, z: 0.8}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1147104929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147104922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a1651b11d3a96147b2ba77e393285d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1147104930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147104922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32ca50715eb59334c9eb0a4553a300eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1147104931}
+  charState: 0
+  micro: 0
+  playerTransform: {fileID: 1147104926}
+  spriteRenderer: {fileID: 1147104925}
+  canOut: 0
+  checkDead: 0
+  movementSpeed: 2
+  xInput: 0
+  zInput: 0
+--- !u!95 &1147104931
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147104922}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 69b7a747b541f38488578ccdbcb4f4d5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1147374394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25555,7 +25568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a181b888ed0dff742838ea79581f4934, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1147104923}
+  player: {fileID: 1147104930}
   col: 0
   sceneManager: {fileID: 642600121}
 --- !u!65 &4516627690496274417
@@ -25746,7 +25759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25c085021e373784c95ad4d01a6c3f6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 0}
+  playerPrefab: {fileID: 1147104922}
   TestL: 0
   tpText: {fileID: 1252090922}
   location: 0

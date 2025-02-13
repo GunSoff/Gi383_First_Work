@@ -5,7 +5,7 @@ public class CharacterAnimation : MonoBehaviour
 {
     private Characters character;
 
-    void Start()
+    void Awake()
     {
         character = GetComponent<Characters>();
     }
@@ -18,11 +18,15 @@ public class CharacterAnimation : MonoBehaviour
 
         switch (c.CharState)
         {
-                case CharState.Idle:
+            case CharState.Idle:
                 c.Anim.SetBool("IsIdle", true);
-                break; 
-                case CharState.Walk:
+                c.Anim.SetBool("IsWalk", false);
+                c.Anim.SetBool("IsDie", false);
+                break;
+            case CharState.Walk:
                 c.Anim.SetBool("IsWalk", true);
+                c.Anim.SetBool("IsIdle", false);
+                c.Anim.SetBool("IsDie", false);
                 break;
                 case CharState.Die:
                 c.Anim.SetBool("IsDie",true);
