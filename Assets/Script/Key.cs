@@ -4,6 +4,14 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
+public enum KeyFor
+{
+    FrontDoor,
+    BathDoor,
+    LadderDoor,
+    StorageDoor,
+    DollHouse
+}
 
 public class Key : MonoBehaviour
 {
@@ -11,6 +19,7 @@ public class Key : MonoBehaviour
     [SerializeField] private GameObject keyText;
     [SerializeField] private int i;
     [SerializeField] private Player player;
+    [SerializeField] private KeyFor keyfor;
 
     private void Awake()
     {

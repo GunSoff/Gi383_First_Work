@@ -21,16 +21,34 @@ public class TP : MonoBehaviour
         {
             if (location == Location.Down)
             {
-                playerPrefab.transform.position = new UnityEngine.Vector3(3.2f, 5.36f, -1.95f);
+                playerPrefab.transform.position = new UnityEngine.Vector3(-29f, 8.5f, -0.6f);
             }
             else if (location == Location.Up)
             {
-                playerPrefab.transform.position = new UnityEngine.Vector3(3.2f, 2.88f, -1.95f);
+                playerPrefab.transform.position = new UnityEngine.Vector3(-27f, 11.2f, -0.6f);
             }
         }
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "Player")
+        {
+            TestL = other.gameObject.name == "Player";
+            tpText.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.name == "Player")
+        {
+            TestL = !(other.gameObject.name == "Player");
+            tpText.SetActive(false);
+        }
+    }
+
+    /*private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.name == "Player")
         {
@@ -46,5 +64,5 @@ public class TP : MonoBehaviour
             TestL = !(other.gameObject.name == "Player");
             tpText.SetActive(false);
         }
-    }
+    }*/
 }
