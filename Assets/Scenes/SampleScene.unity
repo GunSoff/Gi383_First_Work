@@ -20694,7 +20694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1423862020
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28491,6 +28491,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8805744079083450429, guid: 6b04b4f972541194f9311fa162bb965c, type: 3}
+      propertyPath: WinImage
+      value: 
+      objectReference: {fileID: 1423862019}
+    - target: {fileID: 8805744079083450429, guid: 6b04b4f972541194f9311fa162bb965c, type: 3}
       propertyPath: LosePanel
       value: 
       objectReference: {fileID: 53365148}
@@ -28898,7 +28902,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3133979398830538495, guid: 916af3bbaed5e7e4ebee56b8f619652f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8528455372457243523, guid: 916af3bbaed5e7e4ebee56b8f619652f, type: 3}
       propertyPath: m_Pivot.x
