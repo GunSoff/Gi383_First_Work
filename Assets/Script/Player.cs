@@ -11,7 +11,8 @@ public enum PlayerLocation
     DollHouse
 }
 public class Player : Characters
-{
+{   
+    [Header("Player Status")]
     [SerializeField] private bool micro;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private SpriteRenderer spriteRenderer;
@@ -19,6 +20,8 @@ public class Player : Characters
     [SerializeField] public bool checkDead = false;
     [SerializeField] public bool stealth = false;
     [SerializeField] public PlayerLocation playerLocation;
+    
+    [Header("Win Lose Condition")]
     [SerializeField] public GameObject LosePanel;
     [SerializeField] public GameObject WinImage;
     [SerializeField] private float timeToEnd;
